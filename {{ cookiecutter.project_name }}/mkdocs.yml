@@ -1,0 +1,88 @@
+# Project information
+site_name: Project template
+site_url:  https://hds-sandbox.github.io/project-template/ # This should be the final hosting url
+site_author: you! # Change authors accordingly
+site_description: >-
+  Outline for course
+
+# Repository
+repo_name: project-template # Modify this to your repo name
+repo_url: https://github.com/hds-sandbox/project-template # Modify this to your repo url
+
+# Configuration
+theme:
+
+  # Use the Material for MkDocs theme
+  # url: https://squidfunk.github.io/mkdocs-material/
+
+  name: material
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  plugins:
+  - search
+  - minify:   # minify HTML of a page before it is written to disk
+      minify_html: true
+  - mkdocs-jupyter
+  - table-reader
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+# Analytics and social media
+extra:
+  homepage: http://hds-sandbox.github.io/ # Change this to your main webpage, if any
+
+# Extensions
+
+markdown_extensions:
+  - abbr # abbreviations   
+  - admonition  
+  - attr_list # Add HTML/CSS to Markdown elements  
+  - def_list # Definition lists  
+  - footnotes  
+  - md_in_html  
+  - toc: # Table of contents  
+      permalink: true # Adds anchor link, can customise symbol with emoji  
+  - tables  
+
+  # Python extensions - can see descriptions  
+  # at https://facelessuser.github.io/pymdown-extensions/  
+
+  - pymdownx.arithmatex: # LaTeX  
+      generic: true  
+  - pymdownx.betterem: # improves emphasis (bold/italic) handling  
+      smart_enable: all   
+  - pymdownx.critic # useful for marking .md file without changes to html  
+  - pymdownx.caret # improved functionality for caret symbol  
+  - pymdownx.details # collapsable elements that hide content  
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  - pymdownx.highlight: # code highlighting  
+      anchor_linenums: true  
+  - pymdownx.inlinehilite # inline code highlight  
+  - pymdownx.keys # to make entering and styling keyboard key presses easier  
+  - pymdownx.mark # highlight/mark text  
+  - pymdownx.smartsymbols # special characters (e.g. arrows, tm, fractions)  
+  - pymdownx.superfences # arbitrary nesting of code and content blocks inside each other
+  - pymdownx.tabbed: # add tabs to .md file
+      alternate_style: true
+  - pymdownx.tasklist: # checkbox task list  
+      custom_checkbox: true
+  - pymdownx.tilde # delete and subscript
+
+# Extra configs
+use_directory_urls: false
+
+# Page tree
+# Include your page titles and associating .md files here
+
+nav:
+  - General Page: empty.md
+  - Jupyter notebook: jupyter_example.ipynb
+   
