@@ -1,0 +1,4 @@
+project: {{ cookiecutter.__project_name }}
+author: {{ cookiecutter.author }}
+date: {{ cookiecutter.date }}
+description: {{ cookiecutter.description }}
