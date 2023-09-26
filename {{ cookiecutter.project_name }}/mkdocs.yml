@@ -83,6 +83,6 @@ use_directory_urls: false
 # Include your page titles and associating .md files here
 
 nav:
-  - General Page: empty.md
+  - General Page: index.md
   - Jupyter notebook: jupyter_example.ipynb
    
