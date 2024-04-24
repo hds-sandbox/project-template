@@ -14,20 +14,18 @@ Project description
 Folder structure
 -------
 
-Project_name
-| -- readme.md
-| -- Data <- symbolic link
-| -- Docs
-| -- metadata.yml
-| -- Pipeline
-|   | -- rules
-| -- results
-|   | -- Figures
-|   | -- Tables
-| -- scratch
-| -- scripts
-
-
+Project_name/
+|-- readme.md
+|-- Data (symbolic link)
+|-- Docs/
+|-- metadata.yml
+|-- Pipeline/
+|   |-- rules/
+|-- results/
+|   |-- Figures/
+|   |-- Tables/
+|-- scratch/
+|-- scripts/
 
 Credits
 -------
